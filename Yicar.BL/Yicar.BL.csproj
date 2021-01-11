@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yicar.Core\Yicar.Core.csproj" />
+    <ProjectReference Include="..\Yicar.DAL\Yicar.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

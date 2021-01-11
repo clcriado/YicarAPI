@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Yicar.BL/1.0.0": {
+        "dependencies": {
+          "Yicar.Core": "1.0.0",
+          "Yicar.DAL": "1.0.0"
+        },
+        "runtime": {
+          "Yicar.BL.dll": {}
+        }
+      },
+      "Yicar.Core/1.0.0": {
+        "runtime": {
+          "Yicar.Core.dll": {}
+        }
+      },
+      "Yicar.DAL/1.0.0": {
+        "dependencies": {
+          "Yicar.Core": "1.0.0"
+        },
+        "runtime": {
+          "Yicar.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Yicar.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Yicar.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Yicar.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
