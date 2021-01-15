@@ -5,14 +5,11 @@ namespace Yicar.DAL.Models
 {
     public partial class Especialidad
     {
-        public Especialidad()
-        {
-            EspecialidadesMecanico = new HashSet<EspecialidadesMecanico>();
-        }
+        public int Id { get; set; }
+        public int Idmecanico { get; set; }
+        public int Idtipo { get; set; }
 
-        public int IdEspecialidad { get; set; }
-        public string Nombre { get; set; }
-
-        public virtual ICollection<EspecialidadesMecanico> EspecialidadesMecanico { get; set; }
+        public virtual Mecanico IdmecanicoNavigation { get; set; }
+        public virtual Tipo IdtipoNavigation { get; set; }
     }
 }

@@ -12,16 +12,16 @@ namespace Yicar.DAL.Repositories.Implementations
     public class LoginRepository : ILoginRepository
     {
 
-        YicarContext _context { get; set; }
+        yicarContext _context { get; set; }
 
-        public LoginRepository(YicarContext context)
+        public LoginRepository(yicarContext context)
         {
             _context = context;
         }
 
         public bool Login(LoginDTO loginDTO)
         {
-            return _context.Usuario.Any(usuario => usuario.NombreUsuario == loginDTO.Usuario && usuario.Contrasena == loginDTO.Contrasena);
+            return _context.Usuario.Any(usuario => usuario.Login == loginDTO.Login && usuario.Clave== loginDTO.Clave && usuario.Tipo == "jefe");
         }
     }
 }

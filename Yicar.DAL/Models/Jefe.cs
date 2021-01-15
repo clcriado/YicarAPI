@@ -5,9 +5,9 @@ namespace Yicar.DAL.Models
 {
     public partial class Jefe
     {
-        public int IdJefe { get; set; }
-        public int? IdUsuario { get; set; }
+        public int Id { get; set; }
+        public int Idusuario { get; set; }
 
-        public virtual Usuario IdUsuarioNavigation { get; set; }
+        public virtual Usuario IdusuarioNavigation { get; set; }
     }
 }

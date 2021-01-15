@@ -12,3 +12,17 @@ C:\Users\Usuario\source\repos\Yicar.API\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.B
 C:\Users\Usuario\source\repos\Yicar.API\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.csproj.CopyComplete
 C:\Users\Usuario\source\repos\Yicar.API\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.dll
 C:\Users\Usuario\source\repos\Yicar.API\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.pdb
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.BL.deps.json
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.BL.dll
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.BL.pdb
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.Core.dll
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.DAL.dll
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.Core.pdb
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\bin\Debug\netcoreapp3.1\Yicar.DAL.pdb
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.csprojAssemblyReference.cache
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.AssemblyInfoInputs.cache
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.AssemblyInfo.cs
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.csproj.CoreCompileInputs.cache
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.csproj.CopyComplete
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.dll
+C:\Users\linyi\Source\Repos\YicarAPI\Yicar.BL\obj\Debug\netcoreapp3.1\Yicar.BL.pdb

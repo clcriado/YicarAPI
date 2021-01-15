@@ -8,23 +8,24 @@ namespace Yicar.DAL.Models
         public Usuario()
         {
             Jefe = new HashSet<Jefe>();
-            Mecanicos = new HashSet<Mecanicos>();
+            Mecanico = new HashSet<Mecanico>();
             Vendedor = new HashSet<Vendedor>();
         }
 
-        public int IdUsuario { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string NombreUsuario { get; set; }
-        public string Contrasena { get; set; }
-        public string Telefono { get; set; }
-        public string Correo { get; set; }
+        public int Id { get; set; }
+        public int IdConcesionario { get; set; }
+        public string Login { get; set; }
+        public string Clave { get; set; }
         public string Dni { get; set; }
+        public string Nombre { get; set; }
+        public string Apellidos { get; set; }
+        public string Email { get; set; }
         public decimal Salario { get; set; }
         public string Tipo { get; set; }
 
+        public virtual Concesionarios IdConcesionarioNavigation { get; set; }
         public virtual ICollection<Jefe> Jefe { get; set; }
-        public virtual ICollection<Mecanicos> Mecanicos { get; set; }
+        public virtual ICollection<Mecanico> Mecanico { get; set; }
         public virtual ICollection<Vendedor> Vendedor { get; set; }
     }
 }

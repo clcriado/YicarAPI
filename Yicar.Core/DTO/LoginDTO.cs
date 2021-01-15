@@ -6,7 +6,7 @@ namespace Yicar.Core.DTO
 {
     public class LoginDTO
     {
-        public string Usuario { get; set; }
-        public string Contrasena { get; set; }
+        public string Login { get; set; }
+        public string Clave { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Yicar.BL.Contracts;
 using Yicar.Core.DTO;
 
 namespace Yicar.API.Controllers
@@ -12,17 +13,18 @@ namespace Yicar.API.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        [HttpPost]
-        [Route("pepe")]
-        public int Login()
+        public ILoginBL _loginBL { get; set; }
+
+        public LoginController(ILoginBL loginBL)
         {
-            return 4;
+            _loginBL = loginBL;
         }
 
         [HttpPost]
-        public bool Login2(LoginDTO loginDTO)
+        public bool Login(LoginDTO loginDTO)
         {
-            return true;
+            return _loginBL.Login(loginDTO);
+            
         }
     }
 }

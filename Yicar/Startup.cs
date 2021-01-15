@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Yicar.BL.Contracts;
+using Yicar.BL.Implementations;
 using Yicar.DAL.Models;
 using Yicar.DAL.Repositories.Contracts;
 using Yicar.DAL.Repositories.Implementations;
@@ -31,7 +34,7 @@ namespace Yicar
             services.AddControllers();
 
             // Automapper
-            //services.AddAutoMapper(typeof(MappingProfile));
+            services.AddAutoMapper(typeof(MappingProfile));
 
             // Para habilitar CORS en nuestra API
             services.AddCors(options =>
@@ -43,11 +46,14 @@ namespace Yicar
             });
 
             // Inyección del contexto:
-            services.AddDbContext<YicarContext>(opts => opts.UseMySql(Configuration["ConnectionString:YicarDB"]));
+            services.AddDbContext<yicarContext>(opts => opts.UseMySql(Configuration["ConnectionString:YicarDB"]));
 
             // Procedemos a inyectar dependencias:
             services.AddScoped<ILoginBL, LoginBL>();
             services.AddScoped<ILoginRepository, LoginRepository>();
+
+            services.AddScoped<IVentasBL, VentasBL>();
+            services.AddScoped<IVentaRepository, VentaRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

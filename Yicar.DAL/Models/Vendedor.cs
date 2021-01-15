@@ -5,9 +5,16 @@ namespace Yicar.DAL.Models
 {
     public partial class Vendedor
     {
-        public int IdVenta { get; set; }
+        public Vendedor()
+        {
+            Ventas = new HashSet<Ventas>();
+        }
+
+        public int Id { get; set; }
         public int IdUsuario { get; set; }
+        public int? NumVentas { get; set; }
 
         public virtual Usuario IdUsuarioNavigation { get; set; }
+        public virtual ICollection<Ventas> Ventas { get; set; }
     }
 }
