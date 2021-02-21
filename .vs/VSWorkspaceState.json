@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Yicar",
-    "\\Yicar.DAL\\Models"
+    "\\Yicar"
   ],
-  "SelectedNode": "\\Yicar\\Yicar.API.csproj",
+  "SelectedNode": "\\Yicar.sln",
   "PreviewInSolutionExplorer": false
 }

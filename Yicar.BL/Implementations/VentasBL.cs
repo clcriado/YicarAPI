@@ -20,5 +20,10 @@ namespace Yicar.BL.Implementations
         {
             return _ventaRepository.TableVenta();
         }
+
+        public VentaTablaDTO TableVenta(int id)
+        {
+            return _ventaRepository.TableVenta(id);
+        }
     }
 }
