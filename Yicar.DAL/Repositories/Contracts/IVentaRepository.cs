@@ -8,6 +8,6 @@ namespace Yicar.DAL.Repositories.Contracts
     public interface IVentaRepository
     {
         ICollection<VentaTablaDTO> TableVenta();
-
+        VentaTablaDTO TableVenta(int id);
     }
 }

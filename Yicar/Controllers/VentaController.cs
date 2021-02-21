@@ -26,5 +26,12 @@ namespace Yicar.API.Controllers
             return _ventaBL.TableVenta();
 
         }
+
+        [HttpGet ("{id}")]
+        public VentaTablaDTO TableVenta(int id)
+        {
+            return _ventaBL.TableVenta(id);
+
+        }
     }
 }

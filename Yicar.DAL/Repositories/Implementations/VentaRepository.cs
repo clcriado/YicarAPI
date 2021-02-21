@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,18 @@ namespace Yicar.DAL.Repositories.Implementations
 
             return _mapper.Map<ICollection<VentaTablaDTO>>(lista);
 
+        }
+
+        public VentaTablaDTO TableVenta(int id)
+        {
+            var lista = _context.Ventas.
+                Include(venta => venta.IdClienteNavigation).
+                Include(venta => venta.IdVehiculoNavigation).
+                Include(venta => venta.IdVendedorNavigation).
+                    ThenInclude(vendedor => vendedor.IdUsuarioNavigation).
+                Where(venta => id==venta.Id).ToList();
+
+            return _mapper.Map<VentaTablaDTO>(lista[0]);
         }
     }
 }

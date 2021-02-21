@@ -8,6 +8,6 @@ namespace Yicar.BL.Contracts
     public interface IVentasBL
     {
         ICollection<VentaTablaDTO> TableVenta();
-
+        VentaTablaDTO TableVenta(int id);
     }
 }

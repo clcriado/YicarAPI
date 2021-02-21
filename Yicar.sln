@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yicar.API", "Yicar\Yicar.API.csproj", "{ECB7B790-9372-476A-815F-EA5AF03CEB10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yicar", "Yicar\Yicar.csproj", "{ECB7B790-9372-476A-815F-EA5AF03CEB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yicar.BL", "Yicar.BL\Yicar.BL.csproj", "{DD4A0594-00B8-4A83-A43A-542E6C18CC9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yicar.BL", "Yicar.BL\Yicar.BL.csproj", "{DD4A0594-00B8-4A83-A43A-542E6C18CC9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yicar.Core", "Yicar.Core\Yicar.Core.csproj", "{451CDFFF-18E2-466E-8698-6B55C0CB0E39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yicar.Core", "Yicar.Core\Yicar.Core.csproj", "{451CDFFF-18E2-466E-8698-6B55C0CB0E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yicar.DAL", "Yicar.DAL\Yicar.DAL.csproj", "{494181ED-79F9-4FEA-974F-141491C475CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yicar.DAL", "Yicar.DAL\Yicar.DAL.csproj", "{494181ED-79F9-4FEA-974F-141491C475CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yicar.IntegrationTest", "Yicar.IntegrationTest\Yicar.IntegrationTest.csproj", "{0D23371E-FF0C-499C-BDE0-B8D44FF9CD98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{494181ED-79F9-4FEA-974F-141491C475CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494181ED-79F9-4FEA-974F-141491C475CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494181ED-79F9-4FEA-974F-141491C475CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D23371E-FF0C-499C-BDE0-B8D44FF9CD98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D23371E-FF0C-499C-BDE0-B8D44FF9CD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D23371E-FF0C-499C-BDE0-B8D44FF9CD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D23371E-FF0C-499C-BDE0-B8D44FF9CD98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
